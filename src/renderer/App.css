@@ -1,62 +1,120 @@
-/*
- * @NOTE: Prepend a `~` to css file paths that are in your node_modules
- *        See https://github.com/webpack-contrib/sass-loader#imports
- */
 body {
+  margin: 0 !important;
+  /* font-family: 'Alibaba'; */
+}
+
+.para-table {
+  border-collapse: collapse;
+  /* border-spacing: 15px 10px; */
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+.para-td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.para-thead {
+  font-weight: 400;
+  height: 45px;
+  background-color: rgb(250, 250, 250);
+  color: black;
+}
+
+
+/* 
+@font-face {
+  font-family: Alibaba;
+  src: url('./font/AlibabaPuHuiTi-3-45-Light.woff');
+} */
+
+.code {
+  font-family: JetBrainsMono;
+  width: 100%;
+  height: 100%;
+}
+
+
+.brand-logo {
+  margin-right: 5px
+}
+
+.ArProgress {
+  width: 100%;
+  height: 3px;
+  overflow: hidden;
+  background-color: #AAAAAA;
+}
+
+.ArProgress>div {
   position: relative;
-  color: white;
-  height: 100vh;
-  background: linear-gradient(
-    200.96deg,
-    #fedc2a -29.09%,
-    #dd5789 51.77%,
-    #7a2c9e 129.35%
-  );
-  font-family: sans-serif;
-  overflow-y: hidden;
-  display: flex;
+  height: 3px;
+  transition: width .5s ease-in-out;
+  background-color: green;
+}
+
+.ArLoadLine {
+  width: 100%;
+  height: 3px;
+  overflow: hidden;
+}
+
+.ArLoadLine>div {
+  position: relative;
+  width: 10%;
+  height: 3px;
+  animation-name: ArLoadLine;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes ArLoadLine {
+  from {
+    left: -20%;
+    background-color: palevioletred;
+  }
+
+  to {
+    left: 100%;
+    background-color: lawngreen;
+  }
+}
+
+.hdpic {
+  width: 99%;
+  height: 230px;
+  border-radius: 5px;
+  z-index: -1;
   justify-content: center;
-  align-items: center;
+  object-fit: cover;
+  filter: brightness(.5);
 }
 
-button {
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  appearance: none;
-  font-size: 1.3rem;
-  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
-    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
-  transition: all ease-in 0.1s;
-  cursor: pointer;
-  opacity: 0.9;
+.lead {
+  font-size: 1.1rem;
+  font-weight: 100;
 }
 
-button:hover {
-  transform: scale(1.05);
-  opacity: 1;
+.title {
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 
-li {
-  list-style: none;
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+@font-face {
+  font-family: JetBrainsMono;
+  src: url('./font/JetBrainsMono-Regular-2.ttf');
 }
 
 a {
-  text-decoration: none;
-  height: fit-content;
-  width: fit-content;
-  margin: 10px;
-}
-
-a:hover {
-  opacity: 1;
-  text-decoration: none;
-}
-
-.Hello {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
+  color: aqua;
 }

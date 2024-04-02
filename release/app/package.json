@@ -1,12 +1,12 @@
 {
-  "name": "electron-react-boilerplate",
-  "version": "4.6.0",
-  "description": "A foundation for scalable desktop apps",
-  "license": "MIT",
+  "name": "arrm-app",
+  "version": "1.0.0",
+  "description": "ArRM集群渲染管理器",
+  "license": "GPL-3.0-only",
   "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://github.com/electron-react-boilerplate"
+    "name": "Shanghai Lingzhong IT Co.,Ltd.",
+    "email": "root@arsrna.cn",
+    "url": "https://www.arsrna.com"
   },
   "main": "./dist/main/main.js",
   "scripts": {

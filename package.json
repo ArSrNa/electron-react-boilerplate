@@ -1,35 +1,16 @@
 {
-  "description": "A foundation for scalable desktop apps",
-  "keywords": [
-    "electron",
-    "boilerplate",
-    "react",
-    "typescript",
-    "ts",
-    "sass",
-    "webpack",
-    "hot",
-    "reload"
-  ],
-  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
-  "bugs": {
-    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
-  },
-  "license": "MIT",
+  "description": "ArRM集群渲染管理器",
+  "license": "GPL-3.0-only",
   "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://electron-react-boilerplate.js.org"
+    "name": "Shanghai Lingzhong IT Co.,Ltd.",
+    "email": "root@arsrna.cn",
+    "url": "https://www.arsrna.com"
   },
   "contributors": [
     {
-      "name": "Amila Welihinda",
-      "email": "amilajack@gmail.com",
-      "url": "https://github.com/amilajack"
+      "name": "Shanghai Lingzhong IT Co.,Ltd.",
+      "email": "root@arsrna.cn",
+      "url": "https://www.arsrna.com"
     }
   ],
   "main": "./src/main/main.ts",
@@ -96,12 +77,21 @@
     }
   },
   "dependencies": {
+    "@types/react-router-dom": "^5.3.3",
+    "body-parser": "^1.20.2",
     "electron-debug": "^3.2.0",
     "electron-log": "^4.4.8",
-    "electron-updater": "^6.1.4",
+    "express": "^4.19.2",
+    "express-ws": "^5.0.2",
+    "md5": "^2.3.0",
+    "multer": "1.4.5-lts.1",
+    "public-ip": "^6.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.16.0"
+    "react-router-dom": "^6.16.0",
+    "recoil": "^0.7.7",
+    "tdesign-icons-react": "^0.3.2",
+    "tdesign-react": "^1.5.5"
   },
   "devDependencies": {
     "@electron/notarize": "^2.1.0",
@@ -111,7 +101,12 @@
     "@teamsupercell/typings-for-css-modules-loader": "^2.5.2",
     "@testing-library/jest-dom": "^6.1.3",
     "@testing-library/react": "^14.0.0",
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^4.17.21",
+    "@types/express-ws": "^3.0.4",
     "@types/jest": "^29.5.5",
+    "@types/md5": "^2.3.5",
+    "@types/multer": "^1.4.11",
     "@types/node": "20.6.2",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
